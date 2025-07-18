@@ -19,7 +19,7 @@
     gap: 12px
 }
 
-.photographer-name {
+.tiny-grey-text {
     color: var(--secondary-text-color);
     font-size: 12px;
 }
@@ -31,6 +31,11 @@
 
 .books-introduction-container h2 {
     margin-bottom: 32px;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .books-container,
@@ -48,6 +53,7 @@
 .book-card-img {
     width: 200px;
     height: 200px;
+    object-fit: cover;
 }
 
 .book-card-content {
@@ -92,4 +98,109 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 230px;
+}
+
+.values-section {
+    padding-bottom: 0;
+}
+
+.values-container {
+    gap: 32px;
+    width: 392px;
+    padding-bottom: 160px;
+}
+
+.values-text {
+    line-height: 1;
+    font-weight: 300;
+}
+
+.heart-svg {
+    right: -70px;
+    bottom: 70px;
+}
+
+
+/* Page "Nos livres à l'échange" */
+.search-bar-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#search-bar {
+    width: 322px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #F0F0F0;
+    padding: 17px 12px;
+    font-size: 14px;
+}
+
+#search-bar::placeholder {
+    color: var(--secondary-text-color);
+}
+
+
+/* Page présentation livre */
+.book-section {
+    padding: 0;
+}
+
+.book-container {
+    flex-direction: row;
+    gap: 85px;
+    align-items: center;
+}
+
+.book-presentation-img {
+    width: 720px;
+    height: 863px;
+    object-fit: cover;
+}
+
+.book-details {
+    padding: 80px 0;
+    gap: 32px;
+}
+
+.book-basic-infos,
+.book-description-container,
+.book-owner-container {
+    gap: 16px;
+}
+
+.book-basic-infos p {
+    color: var(--secondary-text-color);
+}
+
+.separator {
+    width: 27px;
+    height: 1px;
+    background-color: var(--secondary-text-color);
+}
+
+.column-title {
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 8%;
+}
+
+.book-description,
+.book-owner-username {
+    font-size: 14px;
+}
+
+.book-owner {
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 6px;
+    gap: 12px;
+}
+
+.book-owner-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
 }

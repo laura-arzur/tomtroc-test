@@ -21,6 +21,14 @@
     --secondary-radius: 20px;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 /* Template */
 /* header & footer */
 body {
@@ -93,6 +101,10 @@ h2 {
     text-align: center;
 }
 
+.italic {
+    font-style: italic;
+}
+
 /* Éléments généraux */
 /* section, article */
 
@@ -104,6 +116,12 @@ section {
     padding: 0;
 }
 
+.smaller-container {
+    max-width: 914px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container {
     max-width: 1140px;
     margin-left: auto;
@@ -112,8 +130,6 @@ section {
 
 .larger-container {
     width: 1290px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .darker-bg-section {
