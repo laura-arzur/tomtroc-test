@@ -24,7 +24,7 @@ class BookController
     {
         $id = Utils::request("id", -1);
 
-        if (gettype($id) !== "interger") {
+        if (!filter_var($id, FILTER_VALIDATE_INT)) {
             throw new Exception("Le livre demandé n'existe pas.");
             // TODO Rediriger par la suite
         }
@@ -38,7 +38,7 @@ class BookController
 
         $view = new View($book->getTitle());
         $view->render("singleBook", ['book' => $book]);
-    } 
+    }
 
     /**
      * Affiche le formulaire de modification d'un livre.
@@ -48,7 +48,7 @@ class BookController
     {
         $id = Utils::request("id", -1);
 
-        if (gettype($id) !== "interger") {
+        if (!filter_var($id, FILTER_VALIDATE_INT)) {
             throw new Exception("Le livre demandé n'existe pas.");
             // TODO Rediriger par la suite
         }
@@ -63,5 +63,4 @@ class BookController
         $view = new View("Edition du livre");
         $view->render("bookForm");
     }
-
 }
