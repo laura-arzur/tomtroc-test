@@ -1,0 +1,95 @@
+.home-introduction-container {
+    gap: 78px;
+}
+
+.home-introduction-container img {
+    width: 404px;
+}
+
+.home-introduction-container .content-container {
+    width: 330px;
+    gap: 40px;
+}
+
+.home-introduction-container .text-container {
+    gap: 16px;
+}
+
+.home-introduction-container .img-container {
+    gap: 12px
+}
+
+.photographer-name {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+}
+
+.books-introduction-container,
+.steps-introduction-container {
+    gap: 48px;
+}
+
+.books-introduction-container h2 {
+    margin-bottom: 32px;
+}
+
+.books-container,
+.steps-container {
+    gap: 38px;
+}
+
+.book-card {
+    background-color: #fff;
+    width: 200px;
+    border-bottom-left-radius: var(--main-radius);
+    border-bottom-right-radius: var(--main-radius);
+}
+
+.book-card-img {
+    width: 200px;
+    height: 200px;
+}
+
+.book-card-content {
+    padding: 20px 14px;
+    gap: 22px;
+}
+
+.book-card-infos {
+    gap: 8px
+}
+
+.book-card-author,
+.book-card-owner {
+    color: var(--secondary-text-color);
+}
+
+.book-card-owner {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.steps-introduction-title-div {
+    width: 400px;
+    gap: 24px;
+}
+
+.step-card {
+    background-color: #fff;
+    width: 215px;
+    padding: 44px 18px;
+    border-radius: var(--main-radius);
+}
+
+.step-card p {
+    font-size: 14px;
+}
+
+.bg-img-section {
+    padding: 0;
+    background-image: url('../img/darwin-vegher-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 230px;
+}
